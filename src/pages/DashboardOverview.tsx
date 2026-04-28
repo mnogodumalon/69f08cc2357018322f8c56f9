@@ -25,6 +25,7 @@ import {
   IconUsers,
   IconBriefcase,
   IconClipboardList,
+  IconCalendarPlus,
 } from '@tabler/icons-react';
 import { StatCard } from '@/components/StatCard';
 import {
@@ -140,6 +141,23 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
+      {/* Workflow Navigation */}
+      <div className="grid grid-cols-1 gap-3">
+        <a
+          href="#/intents/schichtplan-erstellen"
+          className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow"
+        >
+          <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+            <IconCalendarPlus size={20} className="text-primary" />
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="font-semibold text-foreground text-sm">Schichtplan erstellen</div>
+            <div className="text-xs text-muted-foreground mt-0.5">Datum wählen, Mitarbeiter einplanen und Schichten auf einmal anlegen</div>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" />
+        </a>
+      </div>
+
       {/* KPI Row */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
