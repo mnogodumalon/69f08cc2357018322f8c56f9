@@ -1,0 +1,5 @@
+- Mitarbeiter (mitarbeiter): nachname[string/text], vorname[string/text], personalnummer[string/text], email[string/email], telefon[string/tel]
+- Schichttypen (schichttypen): schichtname[string/text], startzeit[string/text], endzeit[string/text], beschreibung[string/textarea]
+- Schichtplan (schichtplan): datum[date/date], schichttyp[applookup/select], mitarbeiter[applookup/select], notizen[string/textarea]
+  → schichttyp links to app_id 69f08cb4370392003b52884a
+  → mitarbeiter links to app_id 69f08caf792cede476cc499b
